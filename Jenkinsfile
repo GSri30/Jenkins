@@ -1,16 +1,14 @@
 pipeline { 
     agent any
     stages {
-        stage('Build Code') {
+        stage('Run Code') {
             steps {
-                sh "chmod u+x program.py"
-                sh "./program.py"
+                sh "/usr/bin/python3 program.py"
             }
         }
         stage('Test Code') {
             steps {
-                sh "chmod u+x test.py"
-                sh "./test.py"
+                sh "/usr/bin/python3 test.py"
             }
         }
     } 
