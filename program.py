@@ -1,2 +1,4 @@
 def mean(numbers):
-    return sum(numbers)/len(numbers)
+    if(len(numbers)):
+        return sum(numbers)/len(numbers)
+    return 0
