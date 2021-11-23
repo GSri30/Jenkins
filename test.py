@@ -27,7 +27,7 @@ class TestMean(unittest.TestCase):
         """
         data3 = [4,5,6]
         result3 = mean(data3)
-        self.assertEqual(result3, 5)
+        self.assertEqual(result3, 15)
     
     def test_list_mean4(self):
         """
